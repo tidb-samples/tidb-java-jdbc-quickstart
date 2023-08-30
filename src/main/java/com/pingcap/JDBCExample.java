@@ -117,6 +117,8 @@ public class JDBCExample
         // Or you can use jdbc string instead.
         // mysqlDataSource.setURL("jdbc:mysql://{host}:{port}/test?user={user}&password={password}");
 
+        mysqlDataSource.setRewriteBatchedStatements(true);
+
         return mysqlDataSource;
     }
 }
